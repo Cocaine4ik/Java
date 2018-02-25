@@ -1,0 +1,25 @@
+package ControlOperators;
+
+//≈ще один пример применени€ оператоар break с меткой
+
+public class Break5 {
+	
+public static void main(String argh[]) {
+	
+	done: for(int i = 0; i < 10; i++) {
+		
+		for(int j = 0; j < 10; j++) {
+			
+			for(int k = 0; k < 10; k++) {
+				
+				System.out.println(k + " ");
+				if(k == 5)break done; // переходим по метке done
+			}
+			System.out.println("After k loop"); // не выполнитс€
+		}
+		System.out.println("After j loop"); // не выполнитс€
+	}
+	System.out.println("After i loop"); 
+}
+}
+
