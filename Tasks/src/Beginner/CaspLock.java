@@ -49,9 +49,7 @@ public class CaspLock {
 				letter -=32; // transform letter in upper register
 				System.out.println("Your letter in upper register: " + letter + ".");
 				break;
-			}
-			
-		}
-		
+			}		
+		}		
 	}
 }
