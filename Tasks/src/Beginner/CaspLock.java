@@ -9,5 +9,13 @@ public class CaspLock {
 	public static void main(String args[]) {
 		
 		Scanner in = new Scanner(System.in); // create new scanner and return link for him
+		
+		for( ; ; ) {
+			
+			System.out.println("Enter a Latin letter lower register: ");
+			System.out.println();
+			char letter = in.next().charAt(0);
+		}
+		
 	}
 }

@@ -14,6 +14,9 @@ public class ProgramingMathStatement {
 		
 		System.out.println("Pls enter numbers a, b, f: ");
 		
+		// endless loop. It will always warns user,
+		// and asks user to enter a, while a is zero.
+		
 		for( ; ; ) {
 			// enter a
 			System.out.print("a = ");
