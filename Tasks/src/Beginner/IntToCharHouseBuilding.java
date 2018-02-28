@@ -13,9 +13,6 @@ import java.util.Scanner;
 // |[][][][][][][]|
 // |     {==}	  |
 // ----------------
-// To make task more difficult, after first picture, we asking user to try
-// print a picture using symbols which he would like to.
-
 
 public class IntToCharHouseBuilding {
 	public static void main(String args[]) {
@@ -87,18 +84,6 @@ public class IntToCharHouseBuilding {
 		}
 		System.out.println();
 		System.out.println();
-		
-		// The second part of program. Building user house!
-		
-		System.out.println("Now u can build u own house!");
-		System.out.println("Let's choose structures to your house.");
-		System.out.println();
-		
-		System.out.println("Choose your roof material:");
-		System.out.println("Default roof - 45");
-		
-		roof = in.nextInt();
-		
-		
+				
 	}
 }
