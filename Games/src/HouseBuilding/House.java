@@ -17,10 +17,14 @@ public class House {
 	int rd = 125; // right door part
 	int md = 61; // main door part
 	
+// making spaces between the text	
+	void printSpace() {
+	System.out.println();
+	System.out.println();
+}
+
 //printing line with 16 symbols, using for printing roof and ground
-	
 void printLine(int roofOrFoundation) { 
-	
 	for(int i = 0; i < 16; i++) {
 		System.out.print((char)roofOrFoundation);
 	}
@@ -28,27 +32,35 @@ void printLine(int roofOrFoundation) {
 }
 
 // print one wall
-
 void printWall(int wall) {
 	System.out.print((char)wall);
 }
-//printing main part of the house: 2-7 floors
 
+//printing main part of the house: 2-7 floors
 void printMain(int wall, int lw, int rw) {
-	
-			for(int j = 0; j < 6; j++ ) { // loop for printing 6 strings
-				
-				 // printing left wall
-				
-				// printing windows per floor
-				
-				for(int i = 0; i < 7; i++) { // loop for printing 7 object with 2 symbols each one
-					System.out.print((char)lw);
-					System.out.print((char)rw);
-				}
-				System.out.print((char)wall); // printing right wall
-				System.out.println();
-			}
+	for(int j = 0; j < 6; j++ ) { // loop for printing 6 strings
+	// printing left wall
+	System.out.print((char)wall);
+		// printing windows per floor
+		for(int i = 0; i < 7; i++) { 
+			// loop for printing 7 object with 2 symbols each one
+			System.out.print((char)lw);
+			System.out.print((char)rw);
+		}
+	// printing right wall
+	System.out.print((char)wall); 
+	System.out.println();
+	}
 }
 
+//printing doors
+void printDoors(int ld, int md, int rd) {
+	// printing left part of the door
+	System.out.print("     " + (char)ld); 	
+	// printing central parts of the door
+	System.out.print((char)md); 
+	System.out.print((char)md);
+	// printing right part of the door
+	System.out.print((char)rd + "     ");	
+}
 }

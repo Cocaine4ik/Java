@@ -19,50 +19,44 @@ import java.util.Scanner;
 
 public class Building {
 	public static void main(String args[]) {
-				
-		Scanner in = new Scanner(System.in); // create new scanner and return link for him
+		
+		// create new Scanner and return link for him	
+		Scanner in = new Scanner(System.in); 		
+		// create new object House and return link for him
 		House home = new House();
+		Interface user = new Interface();
 		
 		// The first part of program. Building default house!
-		
 		System.out.print("Building house...");
-		System.out.println();
-		System.out.println();
+		home.printSpace();
 		
-		home.printLine(home.roof); // printing roof		
+		// printing roof	
+		home.printLine(home.roof);
 		
-		home.printMain(home.wall, home.lw, home.rw); // printing main part of the house: 2-7 floors
+		// printing main part of the house: 2-7 floors
+		home.printMain(home.wall, home.lw, home.rw); 
+		
 		// printing 1 floor
-		
-		System.out.print((char)home.wall); // printing left wall
+		// printing left wall
+		home.printWall(home.wall);
 		
 		// printing doors
+		home.printDoors(home.ld, home.md, home.rd); 
 		
-		System.out.print("     " + (char)home.ld);
-		System.out.print((char)home.md);
-		System.out.print((char)home.md);
-		System.out.print((char)home.rd + "     ");
-		
-		System.out.print((char)home.wall); // printing right wall
+		// printing right wall
+		home.printWall(home.wall); 
 		System.out.println();
 		
-		// printing ground
-		
-		for(int i = 0; i < 16; i++) {
-			System.out.print((char)home.foundation);
-		}
-		System.out.println();
-		System.out.println();
+		// printing foundation
+		home.printLine(home.foundation); 
+		home.printSpace();
 		
 		// ************************************************ 
-		//
 		// The second part of program. Building user house!
-		//
 		// ************************************************
 		
-		System.out.println("Now u can build u own house!");
-		System.out.println("Let's choose structures to your house.");
-		System.out.println();
+		//greeting new user
+		user.greeting();
 		
 		for( ; ; ) {
 			System.out.println("Choose your roof material:");
