@@ -16,6 +16,7 @@ public class House {
 	int ld = 123; // left door part
 	int rd = 125; // right door part
 	int md = 61; // main door part
+	int check = 0;
 	
 // making spaces between the text	
 	void printSpace() {

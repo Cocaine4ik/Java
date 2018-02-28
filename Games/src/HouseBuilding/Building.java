@@ -57,41 +57,8 @@ public class Building {
 		
 		//greeting new user
 		user.greeting();
+		user.chooseRoof();
+		user.chooseWall();			
 		
-		for( ; ; ) {
-			System.out.println("Choose your roof material:");
-			System.out.println("Default roof - 45 \t Tile roof - 95 \t Slate roof - 126");
-			System.out.println("Enter a number of the choosen material:");
-			String roofUser = in.nextLine();
-			
-			// checking input, if input is empty, warn user about it
-			// and ask to try again, after that - continue loop.
-							
-			if(roofUser.isEmpty()) {
-				System.out.println("You don't enter anything.");
-				System.out.println();
-				continue;
-			}
-			
-			// checking input, if input have any characters, warn user about it
-			// and ask to try again, after that - continue loop.
-			
-			if(!roofUser.matches("[-+]?\\d+")){
-				System.out.println("The number must consists only numerals.");
-				System.out.println();
-				continue;
-			}
-			
-			if (roofUser.equals("45") || roofUser.equals("95") || roofUser.equals("126")) {
-				home.roof = Integer.parseInt(roofUser);
-				break;
-			}
-			else {
-				System.out.println("Your enter wrong number. Pls choose the material and "
-						+ "use his number.");
-				System.out.println();
-				continue;
-			}
-		}		
 	}
 }
