@@ -1,22 +1,10 @@
 package HouseBuilding;
 
-public class House {
+import java.util.Scanner;
 
-	// Symbol codes for building DEFAULT home
+public class House {
 	
-	// dash - 45, straight slash - 124, equal - 61
-	// left square bracket - 91, right square bracket - 93
-	// left brace - 123, right brace - 125
-	
-	public int roof = 45; int roofUser; // roof
-	public int wall = 124; int wallUser; // wall
-	public int lw = 91; // left part of the window
-	public int rw = 93; // right part of the window
-	public int foundation = 45; // ground
-	public int ld = 123; // left door part
-	public int rd = 125; // right door part
-	public int md = 61; // main door part
-	public int check = 0;
+Scanner in = new Scanner(System.in); 
 	
 // making spaces between the text	
 	void printSpace() {
@@ -63,5 +51,219 @@ void printDoors(int ld, int md, int rd) {
 	System.out.print((char)md);
 	// printing right part of the door
 	System.out.print((char)rd + "     ");	
+}
+
+void greeting() {
+	System.out.println("Now u can build u own house!");
+	System.out.println("Let's choose structures to your house.");
+	System.out.println();	
+}
+
+int chooseRoof(int roof) {
+	for( ; ; ) {
+		System.out.println("Choose your roof style:");
+		System.out.println("Default roof - 45 \t Tile roof - 94 \t Slate roof - 126");
+		System.out.println("Enter a number of the choosen material:");
+		String input = in.nextLine();
+		
+		// checking input, if input is empty, warn user about it
+		// and ask to try again, after that - continue loop.
+						
+		if(input.isEmpty()) {
+			System.out.println("You don't enter anything.");
+			System.out.println();
+			continue;
+		}
+		
+		// checking input, if input have any characters, warn user about it
+		// and ask to try again, after that - continue loop.
+		
+		if(!input.matches("[-+]?\\d+")){
+			System.out.println("The number must consists only numerals.");
+			System.out.println();
+			continue;
+		}
+		
+		if (input.equals("45") || input.equals("94") || input.equals("126")) {
+			roof = Integer.parseInt(input);
+			return roof;
+		}
+		else {
+			System.out.println("Your enter wrong number. Pls choose the material and "
+					+ "use his number.");
+			System.out.println();
+			continue;
+		}
+	}
+	
+}
+
+int chooseWall(int wall) {
+	for( ; ; ) {
+		System.out.println("Choose your wall style:");
+		System.out.println("Default wall - 124 \t Ancient wall - 73 \t Modern wall - 33");
+		System.out.println("Enter a number of the choosen style:");
+		String input = in.nextLine();
+		
+		// checking input, if input is empty, warn user about it
+		// and ask to try again, after that - continue loop.
+						
+		if(input.isEmpty()) {
+			System.out.println("You don't enter anything.");
+			System.out.println();
+			continue;
+		}
+		
+		// checking input, if input have any characters, warn user about it
+		// and ask to try again, after that - continue loop.
+		
+		if(!input.matches("[-+]?\\d+")){
+			System.out.println("The number must consists only numerals.");
+			System.out.println();
+			continue;
+		}
+		
+		if (input.equals("124") || input.equals("73") || input.equals("33")) {
+			wall = Integer.parseInt(input);
+			return wall;
+		}
+		else {
+			System.out.println("Your enter wrong number. Pls choose the style and "
+					+ "use his number.");
+			System.out.println();
+			continue;
+		}
+	}		
+}
+
+int chooseWindows(int lw) {
+	for( ; ; ) {
+		System.out.println("Choose your windows style:");
+		System.out.println("Default windows - 91 \t Circle windows - 40 \t Old windows - 60");
+		System.out.println("Enter a number of the choosen style:");
+		String input = in.nextLine();
+		
+		// checking input, if input is empty, warn user about it
+		// and ask to try again, after that - continue loop.
+						
+		if(input.isEmpty()) {
+			System.out.println("You don't enter anything.");
+			System.out.println();
+			continue;
+		}
+		
+		// checking input, if input have any characters, warn user about it
+		// and ask to try again, after that - continue loop.
+		
+		if(!input.matches("[-+]?\\d+")){
+			System.out.println("The number must consists only numerals.");
+			System.out.println();
+			continue;
+		}
+		
+		if (input.equals("91") || input.equals("40") || input.equals("60")) {
+			lw = Integer.parseInt(input);
+			return lw;
+		}
+		else {
+			System.out.println("Your enter wrong number. Pls choose the style and "
+					+ "use his number.");
+			System.out.println();
+			continue;
+		}
+	}		
+}
+int windows(int lw){
+	switch(lw) {
+	case 91: lw = 93; break;
+	case 40: lw = 41; break;
+	case 60: lw = 62; break;
+	}
+	return lw;
+}
+
+int chooseDoors(int ld) {
+	for( ; ; ) {
+		System.out.println("Choose your doors style:");
+		System.out.println("Default doors - 123 \t Rich doors - 47 \t Metal doors - 124");
+		System.out.println("Enter a number of the choosen style:");
+		String input = in.nextLine();
+		
+		// checking input, if input is empty, warn user about it
+		// and ask to try again, after that - continue loop.
+						
+		if(input.isEmpty()) {
+			System.out.println("You don't enter anything.");
+			System.out.println();
+			continue;
+		}
+		
+		// checking input, if input have any characters, warn user about it
+		// and ask to try again, after that - continue loop.
+		
+		if(!input.matches("[-+]?\\d+")){
+			System.out.println("The number must consists only numerals.");
+			System.out.println();
+			continue;
+		}
+		
+		if (input.equals("123") || input.equals("47") || input.equals("124")) {
+			ld = Integer.parseInt(input);
+			return ld;
+		}
+		else {
+			System.out.println("Your enter wrong number. Pls choose the style and "
+					+ "use his number.");
+			System.out.println();
+			continue;
+		}
+	}		
+}
+int doors(int ld){
+	switch(ld) {
+	case 123: ld = 125; break;
+	case 47: ld = 92; break;
+	case 124: ld = 124; break;
+	}
+	return ld;
+}
+
+int chooseFoundation(int foundation) {
+	for( ; ; ) {
+		System.out.println("Choose your foundation style:");
+		System.out.println("Default foundation - 45 \t Great foundation - 35 \t Old foundation - 119");
+		System.out.println("Enter a number of the choosen material:");
+		String input = in.nextLine();
+		
+		// checking input, if input is empty, warn user about it
+		// and ask to try again, after that - continue loop.
+						
+		if(input.isEmpty()) {
+			System.out.println("You don't enter anything.");
+			System.out.println();
+			continue;
+		}
+		
+		// checking input, if input have any characters, warn user about it
+		// and ask to try again, after that - continue loop.
+		
+		if(!input.matches("[-+]?\\d+")){
+			System.out.println("The number must consists only numerals.");
+			System.out.println();
+			continue;
+		}
+		
+		if (input.equals("45") || input.equals("35") || input.equals("119")) {
+			foundation = Integer.parseInt(input);
+			return foundation;
+		}
+		else {
+			System.out.println("Your enter wrong number. Pls choose the material and "
+					+ "use his number.");
+			System.out.println();
+			continue;
+		}
+	}
+	
 }
 }
