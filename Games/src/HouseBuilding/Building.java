@@ -57,8 +57,9 @@ public class Building {
 		
 		//greeting new user
 		user.greeting();
-		user.chooseRoof();
-		user.chooseWall();			
-		
+		user.chooseRoof(in, home.roofUser);
+		user.chooseWall(in, home.wallUser);
+		home.printLine(home.roofUser);
+		home.printMain(home.wallUser, home.lw, home.rw); 
 	}
 }

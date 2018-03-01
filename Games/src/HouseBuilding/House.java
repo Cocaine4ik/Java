@@ -8,15 +8,15 @@ public class House {
 	// left square bracket - 91, right square bracket - 93
 	// left brace - 123, right brace - 125
 	
-	int roof = 45; // roof
-	int wall = 124; // wall
-	int lw = 91; // left part of the window
-	int rw = 93; // right part of the window
-	int foundation = 45; // ground
-	int ld = 123; // left door part
-	int rd = 125; // right door part
-	int md = 61; // main door part
-	int check = 0;
+	public int roof = 45; int roofUser; // roof
+	public int wall = 124; int wallUser; // wall
+	public int lw = 91; // left part of the window
+	public int rw = 93; // right part of the window
+	public int foundation = 45; // ground
+	public int ld = 123; // left door part
+	public int rd = 125; // right door part
+	public int md = 61; // main door part
+	public int check = 0;
 	
 // making spaces between the text	
 	void printSpace() {

@@ -16,7 +16,7 @@ void greeting() {
 	System.out.println();	
 }
 
-void chooseRoof() {
+void chooseRoof(Scanner in, int roof) {
 	for( ; ; ) {
 		System.out.println("Choose your roof material:");
 		System.out.println("Default roof - 45 \t Tile roof - 95 \t Slate roof - 126");
@@ -42,7 +42,7 @@ void chooseRoof() {
 		}
 		
 		if (input.equals("45") || input.equals("95") || input.equals("126")) {
-			home.roof = Integer.parseInt(input);
+			roof = Integer.parseInt(input);
 			break;
 		}
 		else {
@@ -54,11 +54,11 @@ void chooseRoof() {
 	}		
 }
 
-void chooseWall() {
+void chooseWall(Scanner in, int wall) {
 	for( ; ; ) {
 		System.out.println("Choose your wall style:");
-		System.out.println("Default roof - 45 \t Tile roof - 95 \t Slate roof - 126");
-		System.out.println("Enter a number of the choosen material:");
+		System.out.println("Default wall - 124 \t Ancint wall - 73 \t Modern wall - 33");
+		System.out.println("Enter a number of the choosen style:");
 		String input = in.nextLine();
 		
 		// checking input, if input is empty, warn user about it
@@ -79,12 +79,12 @@ void chooseWall() {
 			continue;
 		}
 		
-		if (input.equals("45") || input.equals("95") || input.equals("126")) {
-			home.roof = Integer.parseInt(input);
+		if (input.equals("124") || input.equals("73") || input.equals("33")) {
+			wall = Integer.parseInt(input);
 			break;
 		}
 		else {
-			System.out.println("Your enter wrong number. Pls choose the material and "
+			System.out.println("Your enter wrong number. Pls choose the style and "
 					+ "use his number.");
 			System.out.println();
 			continue;
