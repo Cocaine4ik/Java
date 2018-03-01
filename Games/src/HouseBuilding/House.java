@@ -86,6 +86,7 @@ int chooseRoof(int roof) {
 		
 		if (input.equals("45") || input.equals("94") || input.equals("126")) {
 			roof = Integer.parseInt(input);
+			System.out.println();
 			return roof;
 		}
 		else {
@@ -125,6 +126,7 @@ int chooseWall(int wall) {
 		
 		if (input.equals("124") || input.equals("73") || input.equals("33")) {
 			wall = Integer.parseInt(input);
+			System.out.println();
 			return wall;
 		}
 		else {
@@ -163,6 +165,7 @@ int chooseWindows(int lw) {
 		
 		if (input.equals("91") || input.equals("40") || input.equals("60")) {
 			lw = Integer.parseInt(input);
+			System.out.println();
 			return lw;
 		}
 		else {
