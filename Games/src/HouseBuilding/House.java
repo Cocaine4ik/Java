@@ -54,7 +54,7 @@ void printDoors(int ld, int md, int rd) {
 }
 
 void greeting() {
-	System.out.println("Now u can build u own house!");
+	System.out.println("Now you can build your own house!");
 	System.out.println("Let's choose structures to your house.");
 	System.out.println();	
 }
@@ -63,7 +63,7 @@ int chooseRoof(int roof) {
 	for( ; ; ) {
 		System.out.println("Choose your roof style:");
 		System.out.println("Default roof - 45 \t Tile roof - 94 \t Slate roof - 126");
-		System.out.println("Enter a number of the choosen material:");
+		System.out.println("Enter a number of the choosen style:");
 		String input = in.nextLine();
 		
 		// checking input, if input is empty, warn user about it
