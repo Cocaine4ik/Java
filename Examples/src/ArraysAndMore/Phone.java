@@ -18,7 +18,7 @@ public class Phone {
 		else {
 			for(i = 0; i < numbers.length; i++) {
 				if(numbers[i][1].equals(args[0])) {
-					System.out.println(x);
+					System.out.println();
 				}
 			}
 		}
