@@ -1,4 +1,4 @@
-package ArraysAndMore;
+package BitwiseOperations;
 
 // transforming upper case letters to lower case letters 
 

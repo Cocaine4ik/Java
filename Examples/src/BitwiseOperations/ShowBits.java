@@ -1,4 +1,4 @@
-package ArraysAndMore;
+package BitwiseOperations;
 
 // transforming valuable type byte to binary format
 

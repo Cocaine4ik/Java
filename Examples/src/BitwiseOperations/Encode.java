@@ -1,4 +1,4 @@
-package ArraysAndMore;
+package BitwiseOperations;
 
 // using operation of subordinate exclusioner XOR
 // for encode and decode messages 

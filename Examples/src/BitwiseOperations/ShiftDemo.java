@@ -1,4 +1,4 @@
-package ArraysAndMore;
+package BitwiseOperations;
 
 // Demonstration of operators "<<" and ">>"
 

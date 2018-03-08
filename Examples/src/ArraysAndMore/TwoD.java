@@ -1,5 +1,7 @@
 package ArraysAndMore;
 
+// Demonstration of the two-dimensional array
+
 public class TwoD {
 	public static void main(String args[]) {
 		
