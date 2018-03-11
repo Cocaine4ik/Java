@@ -8,9 +8,9 @@ public class MinMax2 {
 		
 		min = max = nums[0];
 		
-		for(int i = 1; i < 10; i++) {
-			if(nums[i] < min) min = nums[i];
-			if(nums[i] > max) max = nums[i];
+		for(int x : nums) {
+			if (x < min) min = x;
+			if (x > max) max =x;
 		}
 		System.out.println("min and max: " + min + " " + max);
 	}
