@@ -31,8 +31,7 @@ public class Building {
 		int ld = 123; // left door part
 		int rd = 125; // right door part
 		int md = 61; // main door part
-		
-		// create new Scanner and return link for him			
+				
 		// create new object House and return link for him
 		House home = new House();
 		
