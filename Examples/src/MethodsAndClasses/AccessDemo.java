@@ -1,5 +1,7 @@
 package MethodsAndClasses;
 
 public class AccessDemo {
-	public static void main
+	public static void main(String args[]) {
+		
+	}
 }
