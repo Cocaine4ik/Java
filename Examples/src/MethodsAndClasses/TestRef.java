@@ -2,11 +2,11 @@ package MethodsAndClasses;
 
 // objects transfer to method by link
 
-public class Test2 {
+public class TestRef {
 
 	int a, b;
 	
-	Test2(int i, int j) {
+	TestRef(int i, int j) {
 		a = i;
 		b = j;
 	}
@@ -14,7 +14,7 @@ public class Test2 {
 	// transfer object to method. Now variables ob.a and ob.b,
 	// from transferring method, we can change
 	
-	void change(Test2 ob) {
+	void change(TestRef ob) {
 		ob.a = ob.a + ob.b;
 		ob.b = - ob.b;
 	}
