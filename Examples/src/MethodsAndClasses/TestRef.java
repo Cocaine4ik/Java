@@ -14,8 +14,8 @@ public class TestRef {
 	// transfer object to method. Now variables ob.a and ob.b,
 	// from transferring method, we can change
 	
-	void change(TestRef ob) {
-		ob.a = ob.a + ob.b;
-		ob.b = - ob.b;
+	void change(TestRef object) {
+		object.a = object.a + object.b;
+		object.b = - object.b;
 	}
 }
