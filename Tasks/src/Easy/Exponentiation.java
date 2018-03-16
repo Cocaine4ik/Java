@@ -21,7 +21,7 @@ public class Exponentiation {
 		
 		for(int i = 1; i < pow; i++) {
 			
-			number = 
+			number = 1;
 		
 			
 		}
