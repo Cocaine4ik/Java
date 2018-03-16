@@ -16,15 +16,17 @@ public class Exponentiation {
 		System.out.print("Enter number:" );
 		n = in.nextInt();
 		
+		number = n; System.out.println(number);
+		
 		System.out.print("Enter power:" );
 		pow = in.nextInt();
 		
-		for(int i = 1; i < pow; i++) {
-			
-			number = 1;
-		
-			
+		for(int i = 1; i < pow; i++) { // Exponentiate
+			number *= n;
 		}
-		System.out.println(n);
+		
+		if(pow == 0) number = 1; // checking if power equals zero
+		
+		System.out.println(number);
 	}
 }
