@@ -20,14 +20,16 @@ public class Overload {
 	// overload method ovlDemo with 2 options  type int
 	// the third method variant
 	
-	void ovlDemo(int a, int b) {
+	int ovlDemo(int a, int b) {
 		System.out.println("No parameters" + a + " " + b);
+		return a + b;
 	}
 	
 	// overload method ovlDemo with 2 options  type double
 	// the fourth method variant
 	
-	void ovlDemo(double a, double b) {
+	double ovlDemo(double a, double b) {
 		System.out.println("No parameters" + a + " " + b);
+		return a +b;
 	}
 }
