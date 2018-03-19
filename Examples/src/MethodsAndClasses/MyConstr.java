@@ -14,8 +14,8 @@ public class MyConstr {
 	}
 	
 	MyConstr(int i) {
-        System.out.println("Inside MyConstr().");
-        x = 0 ;
+        System.out.println("Inside MyConstr(int).");
+        x = i ;
 	}
 	MyConstr(double d) {
         System.out.println("Inside MyConstr(double).");
