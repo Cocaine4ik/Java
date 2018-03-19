@@ -26,5 +26,4 @@ public class MyConstr {
         System.out.println("Inside MyConstr(int, int).");
         x = i * j;
     }
-
 	}
