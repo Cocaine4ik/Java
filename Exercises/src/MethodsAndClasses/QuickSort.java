@@ -9,6 +9,10 @@ public class QuickSort {
 	
 	static void qsort(char items[]) {
 		qs(items, 0, items.length-1);
-	}		
+	}
+
+	private static void qs(char[] items, int i, int j) {
 	
+		
+	}			
 }
