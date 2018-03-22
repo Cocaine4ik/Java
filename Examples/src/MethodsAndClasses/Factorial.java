@@ -18,4 +18,12 @@ public class Factorial {
 		return result;
 	}
 	
+	// iteration method
+	 int factI(int n) {
+	        int t, result;
+
+	        result = 1;
+	        for(t = 1; t <= n; t++) result *= t;
+	        return result;
+	    }
 }
