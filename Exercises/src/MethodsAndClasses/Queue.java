@@ -1,4 +1,4 @@
-package MethodAndClasses;
+package MethodsAndClasses;
 
 // Improved queue class for storage characters values
 

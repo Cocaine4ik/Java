@@ -1,4 +1,4 @@
-package MethodAndClasses;
+package MethodsAndClasses;
 
 public class QDemo2 {
 	public static void main(String args[]) {
