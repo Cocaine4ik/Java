@@ -17,7 +17,8 @@ public class QuickSort {
 		
 		int i, j;
 		char x, y;
-		i = left; j = right;
+		i = left;
+		j = right;
 		x = items[(left + right) / 2];
 		
 		do {
