@@ -1,12 +1,12 @@
 package MethodsAndClasses;
 
-// using arguments of changeable length
+// using arguments of variable length
 // with another arguments
 
 public class VarArgs2 {
 	
 	// here msg - is a simple argument
-	// and v - is a changeable length argument
+	// and v - is a variable length argument
 	
 	static void vaTest (String msg, int ...v) {
 		System.out.println(msg + v.length);

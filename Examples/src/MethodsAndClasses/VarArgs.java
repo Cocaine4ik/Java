@@ -1,10 +1,10 @@
 package MethodsAndClasses;
 
-// demonstration methods with changeable length
+// demonstration methods with variable length
 
 public class VarArgs {
 
-// Method VaTest() with arguments of changeable length
+// Method VaTest() with arguments of variable length
 	
 	static void vaTest(int ...v) {
 		System.out.println("Number of args: " + v.length);
@@ -17,7 +17,7 @@ public class VarArgs {
 	}
 	public static void main(String args[])
     {
-        // Method vaTest()   can be call with changeable number of arguments
+        // Method vaTest()   can be call with variable number of arguments
         vaTest(10); // 1 argument
         vaTest(1, 2, 3); // few argument
         vaTest(); // no arguments
