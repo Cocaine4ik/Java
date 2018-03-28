@@ -1,44 +1,51 @@
 package MethodsAndClasses;
 
-
-// —оздайте класс Stack, реализующий стек дл€ хранени€ символов. 
-// »спользуйте методы push() и pop() дл€ манипулировани€ содержимым стека. 
-// ѕользователь класса Stack должен иметь возможность задавать размер стека при его создании.
-// ¬се члены класса Stack, кроме методов push() и pop(), должны быть объ€влены как private.
-// (.ѕодсказка: в качестве заготовки можете воспользоватьс€ классом Queue, изменив в нем лишь способ доступа к данным.)
+// Create class Stack, realized stack for storage characters. 
+// Use methods push() и pop() to control stack includes. 
+// Stack class user must has an opportunity to enter stack size himself.
+// All members of the class Stack, besides methods push() and pop(), must be private.
 
 public class Stack {
 
-	private char stck[];
-	private int top;
-	private int size;
+	private char stck[]; // arrays for storage characters
+	private int top; // top point in stack
+	public int size; // array size	
 	
-
+	// stack constructor
 	
-	Stack(int size) {
+	Stack(int m) {
 	
-		this.size = size;
+		size = m;
 		stck = new char[size];
-		top = -1;
+		top = 0; // if top is 0, we can understand that stack if empty,
+		// else stack have 1 more elements
 	}
 
-	public void push(char ch) {
-		stck [++top] = ch;
-	}
+    // push characters to stack
+    void push(char ch) {
+        if(top == stck.length) {
+            System.out.println(" - Stack is full."); // check if stack if full
+            return;
+        }
+        stck[top] = ch;
+        top++;
+    }
+
+    // extract symbols from stack
+    
+    char pop() {
+        if(top == 0) {
+            System.out.println(" - Stack is empty."); // 
+            return (char) 0;
+        }
+        top--;
+        return stck[top];
+    }
 	
-	public void pop(char ch) {
-		stck [top--] = ch;		
-	}
-	
-	public void isEmpty() {
-		if(top == -1)
-			System.out.println("Array is empty!");
-	}
-	
-	public boolean isFull() {
-		return (size == stck.length - 1);
-			
-	}
-	
-	
+    // show top stack point element
+    
+    char readTop() {
+		return stck[top];
+    	
+    }
 }
