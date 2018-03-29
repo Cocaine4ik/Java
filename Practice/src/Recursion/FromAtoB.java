@@ -26,7 +26,7 @@ public class FromAtoB {
 				System.out.print(A);
 				return;
 			}
-			// recursion #2
+			// recursion step #2
 			System.out.print(B + " ");
 			AToB(A, B + 1);
 		}
