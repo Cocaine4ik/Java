@@ -3,19 +3,11 @@ package Inheritance;
 public class Shapes {
 	public static void main(String args[]) {
 		
-		Triangle t1 = new Triangle();
-		Triangle t2 = new Triangle();
+		Triangle t1 = new Triangle (4.0, 4.0, "isosceles");
+		Triangle t2 = new Triangle (8.0, 12.0, "right");
 		
         // All members of the class Triangle, also extends from the class
         // TwoDShape, access from object type Triangle.
-		
-		t1.setWidth(4.0);
-		t1.setHeight(4.0);
-		t1.style = "isosceles";
-		
-		t2.setWidth(8.0);
-		t2.setHeight(12.0);
-		t2.style = "right";
 		
 		System.out.println("Info for t1: ");
 		t1.showStyle();

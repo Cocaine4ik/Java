@@ -5,7 +5,19 @@ package Inheritance;
 
 public class Triangle extends TwoDShape {
 
-	String style;
+	private String style;
+	
+	// construct
+	
+	Triangle(double w, double h, String s) {
+		
+		// Initialization of the parent part of object
+		// responded class TwoDSHape
+		
+		super(w, h);
+		style = s;		
+	}
+	
 	
 	double area() {
 		// From the class Triangle we can apply members of the class
