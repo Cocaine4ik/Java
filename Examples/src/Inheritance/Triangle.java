@@ -7,18 +7,31 @@ public class Triangle extends TwoDShape {
 
 	private String style;
 	
-	// construct
+	// Using operator super() to call
+    // different construct options TwoDShape() .
+    // Default construct.
+	
+	Triangle(){
+		super(); // call default superclass construct
+		style = "null";
+	}
+	
+	// construct with parameters
 	
 	Triangle(double w, double h, String s) {
-		
 		// Initialization of the parent part of object
-		// responded class TwoDSHape
-		
+		// responded class TwoDSHape		
 		super(w, h);
 		style = s;		
 	}
 	
+	//construct with one argument
 	
+	Triangle(double x) {
+		super(x); // call superclass construct with one argument
+		style = "isosceles";
+		
+	}
 	double area() {
 		// From the class Triangle we can apply members of the class
         // TwoDShape in the same way as for their own members.
