@@ -10,7 +10,7 @@ public class Triangle extends TwoDShape {
 	double area() {
 		// From the class Triangle we can apply members of the class
         // TwoDShape in the same way as for their own members.
-		return width * height / 2;
+		return getWidth() * getHeight() / 2;
 	}
 	
 	void showStyle() {

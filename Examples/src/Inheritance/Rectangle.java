@@ -3,11 +3,11 @@ package Inheritance;
 public class Rectangle extends TwoDShape {
 	
 	boolean isSquare() {
-		if(width == height) return true;
+		if(getWidth() == getHeight()) return true;
 		return false;
 	}
 	
 	double area() {
-		return width * height;
+		return getWidth() * getHeight();
 	}
 }

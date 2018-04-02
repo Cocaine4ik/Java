@@ -9,12 +9,12 @@ public class Shapes {
         // All members of the class Triangle, also extends from the class
         // TwoDShape, access from object type Triangle.
 		
-		t1.width = 4.0;
-		t1.height = 4.0;
+		t1.setWidth(4.0);
+		t1.setHeight(4.0);
 		t1.style = "isosceles";
 		
-		t2.width = 8.0;
-		t2.height = 12.0;
+		t2.setWidth(8.0);
+		t2.setHeight(12.0);
 		t2.style = "right";
 		
 		System.out.println("Info for t1: ");
