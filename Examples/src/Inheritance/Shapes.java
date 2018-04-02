@@ -4,8 +4,8 @@ public class Shapes {
 	public static void main(String args[]) {
 		
 		Triangle t1 = new Triangle();
-		Triangle t2 = new Triangle (4.0, 4.0, "isosceles");
-		Triangle t3 = new Triangle (8.0, 12.0, "right");
+		Triangle t2 = new Triangle (8.0, 12.0, "isosceles");
+		Triangle t3 = new Triangle (4.0);
 		
 		t1 = t2;
         // All members of the class Triangle, also extends from the class
