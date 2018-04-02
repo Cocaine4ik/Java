@@ -14,6 +14,6 @@ public class Triangle extends TwoDShape {
 	}
 	
 	void showStyle() {
-		System.out.println("Triangle is + " + style);		
+		System.out.println("Triangle is " + style);		
 	}
 }
