@@ -23,4 +23,14 @@ public class Vehicle {
 	double fuelneeded(int miles) {
 		return (double)miles/mpg;
 	}
+	
+	// access method to examples variables
+	int getPassengers() { return passengers; }
+	void setPassengers(int p) { passengers = p; }
+	
+	int getFuelcap() { return fuelcap; }
+	void setFuelcap(int f) { fuelcap = f; }
+	
+	int getMpg() { return mpg; }
+	void setMgp(int m) { mpg = m; }
 }
