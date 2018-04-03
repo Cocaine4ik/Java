@@ -1,10 +1,10 @@
-package IntroduceToClassesObjectsMethods;
+package Inheritance;
 
 public class Vehicle {
 	
-	int passengers; // number of passengers
-	int fuelcap; // volume of fuel tank in gallons
-	int mpg; // fuel usage litter to 
+	private int passengers; // number of passengers
+	private int fuelcap; // volume of fuel tank in gallons
+	private int mpg; // fuel usage litter to 
 	
 	// Vehicle class construct
 	Vehicle(int p, int f, int m){
