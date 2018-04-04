@@ -14,6 +14,8 @@ public class TwoDShape {
 		width = height = 0.0;
 	}
 	
+	// parameterized construct
+	
 	TwoDShape(double w, double h) {
 		width = w;
 		height = h;
