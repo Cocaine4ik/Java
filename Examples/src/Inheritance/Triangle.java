@@ -21,14 +21,14 @@ public class Triangle extends TwoDShape {
 	Triangle(double w, double h, String s) {
 		// Initialization of the parent part of object
 		// responded class TwoDSHape		
-		super(w, h);
+		super(w, h, "triangle");
 		style = s;		
 	}
 	
 	//construct with one argument
 	
 	Triangle(double x) {
-		super(x); // call superclass construct with one argument
+		super(x, "triangle"); // call superclass construct with one argument
 		style = "isosceles";
 		
 	}
