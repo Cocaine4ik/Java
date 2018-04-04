@@ -28,6 +28,13 @@ public class TwoDShape {
 		width = height = x;
 	}
 	
+	// build one object based on another
+	
+	TwoDShape(TwoDShape ob) {
+		width = ob.width;
+		height = ob.height;
+	}
+	
 	// Access methods
 	
 	double getWidth() {return width;}

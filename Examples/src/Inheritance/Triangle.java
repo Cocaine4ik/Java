@@ -32,6 +32,14 @@ public class Triangle extends TwoDShape {
 		style = "isosceles";
 		
 	}
+	
+	// build one object based on another
+	
+	Triangle(Triangle ob) {
+		// transfer link to object Triangle to construct of the class TwoDShape.
+		super(ob);
+		style = ob.style;
+	}
 	double area() {
 		// From the class Triangle we can apply members of the class
         // TwoDShape in the same way as for their own members.
