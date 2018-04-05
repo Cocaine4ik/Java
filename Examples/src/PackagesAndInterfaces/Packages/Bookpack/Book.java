@@ -8,14 +8,14 @@ public class Book {
 	private int pubDate;
 	
 	// parameterized construct
-	Book(String t, String a, int p) {
+	public Book(String t, String a, int p) {
 		title = t;
 		author = a;
 		pubDate = p;
 	}
 	
 	// show method
-	void show() {
+	public void show() {
 		System.out.println(title);
 		System.out.println(author);
 		System.out.println(pubDate);
