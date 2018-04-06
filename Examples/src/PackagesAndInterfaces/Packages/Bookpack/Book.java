@@ -3,9 +3,9 @@ package PackagesAndInterfaces.Packages.Bookpack;
 // package work demonstration
 
 public class Book {
-	private String title;
-	private String author;
-	private int pubDate;
+	protected String title;
+	protected String author;
+	protected int pubDate;
 	
 	// parameterized construct
 	public Book(String t, String a, int p) {
