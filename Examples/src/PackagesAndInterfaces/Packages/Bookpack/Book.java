@@ -8,10 +8,10 @@ public class Book {
 	protected int pubDate;
 	
 	// parameterized construct
-	public Book(String t, String a, int p) {
+	public Book(String t, String a, int d) {
 		title = t;
 		author = a;
-		pubDate = p;
+		pubDate = d;
 	}
 	
 	// show method
