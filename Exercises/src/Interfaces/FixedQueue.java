@@ -3,17 +3,12 @@ package Interfaces;
 // class realized fixed size queue
 // for storage symbol
 
-public class FixedQueue implements ICharQ {
+public class FixedQueue extends Queue implements ICharQ {
 	
-	private char q[]; // array for storage queue elements
-	private int putloc, getloc; // putting and getting element from the storage indexes
-	
-	// create an empty queue chosen size
 	public FixedQueue(int size) {
-		q = new char[size + 1]; // pick memory for queue
-		putloc = getloc = 0;
+		super(size);
 	}
-	
+
 	// put symbol to queue
 	public void put(char ch) {
 		if(putloc == q.length-1) {
