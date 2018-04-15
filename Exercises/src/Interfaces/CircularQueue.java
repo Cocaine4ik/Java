@@ -14,13 +14,23 @@ public class CircularQueue extends Queue implements ICharQ {
         lower the index getloc or if index putloc pointing
         to the end of array, and index getloc - to the beginning. */
 		
-		if(putloc + 1 == getloc | ((putloc == q.length - 1) ))
+		if( putloc + 1 == getloc | ((putloc == q.length - 1) & (getloc==0)) ) {
+			System.out.println(" - queue if full.");
+			return;
+		}
+		putloc++;
+		if(putloc == q.length) putloc = 0; // return to the array beginning
+		q[putloc] = ch;
 	}
 
-	@Override
 	public char get() {
-		// TODO Auto-generated method stub
-		return 0;
+		if(getloc == putloc ) {
+			System.out.println(" - queue is empty.");
+			return (char) 0;
+		}
+		getloc++;
+		if(getloc == q.length) getloc = 0; // come back to beginning
+		return q[getloc];
 	}
 
 }
