@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.qPack;
 
 // class realized fixed size queue
 // for storage symbol

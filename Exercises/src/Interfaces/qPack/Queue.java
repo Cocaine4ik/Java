@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.qPack;
 
 public class Queue {
 	

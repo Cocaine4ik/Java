@@ -1,5 +1,10 @@
 package Interfaces;
 
+import Interfaces.qPack.CircularQueue;
+import Interfaces.qPack.DynQueue;
+import Interfaces.qPack.FixedQueue;
+import Interfaces.qPack.ICharQ;
+
 // Demonstration of the three interface ICharQ realizations
 
 public class IQDemo {
