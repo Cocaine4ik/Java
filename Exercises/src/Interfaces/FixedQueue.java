@@ -28,4 +28,11 @@ public class FixedQueue extends Queue implements ICharQ {
 		getloc++;
 		return q[getloc];
 	}
+
+	// reset queue
+	public void reset() {
+		getloc = putloc = 0;
+		System.out.println("Queue was reseted!");
+	}
+
 }

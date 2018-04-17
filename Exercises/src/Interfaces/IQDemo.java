@@ -29,6 +29,11 @@ public class IQDemo {
 		
 		System.out.println();
 		
+		iQ.reset();
+		System.out.print("Contents of fixed queue: ");
+		iQ.get();
+		System.out.println();
+		
 		iQ = q2;
 		
 		// put dynamic size characters row 
