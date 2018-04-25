@@ -1,7 +1,7 @@
 package ExceptionHandling;
 
 // Exercise #9.1
-// Adding Добавление обработчиков исключений в класс очереди.
+// Adding queue handler to queue class
 
 public class QExcDemo {
 
