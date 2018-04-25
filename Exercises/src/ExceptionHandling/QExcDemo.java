@@ -15,7 +15,7 @@ public class QExcDemo {
 		try {
 			// queue overflow
 			for(i = 0; i < 11; i++) {
-				System.out.println("Attempting to store: " + 
+				System.out.print("Attempting to store: " + 
 				(char)('A' + i) );
 				q.put((char)('A' + i));
 				System.out.println(" - OK");
@@ -30,7 +30,7 @@ public class QExcDemo {
 		try {
 			// try to get character from empty queue
 			for(i = 0; i < 11; i++) {
-				System.out.println("Getting new char: ");
+				System.out.print("Getting new char: ");
 				ch = q.get();
 				System.out.println(ch);
 			}
