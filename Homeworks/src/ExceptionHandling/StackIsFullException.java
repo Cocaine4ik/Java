@@ -6,7 +6,7 @@ public class StackIsFullException extends Exception {
 
 	int size;
 	
-	StackIsFullException(int s) {
+	public StackIsFullException(int s) {
 		s = size;
 	}
 	

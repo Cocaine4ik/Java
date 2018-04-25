@@ -1,5 +1,8 @@
 package MethodsAndClasses;
 
+import ExceptionHandling.StackIsEmptyException;
+import ExceptionHandling.StackIsFullException;
+
 // Create class Stack, realized stack for storage characters. 
 // Use methods push() è pop() to control stack includes. 
 // Stack class user must has an opportunity to enter stack size himself.
@@ -22,22 +25,18 @@ public class Stack {
 	}
 
     // push characters to stack
-    void push(char ch) {
-        if(top == stck.length) {
-            System.out.println(" - Stack is full."); // check if stack if full
-            return;
-        }
+    void push(char ch) throws StackIsFullException{
+        if(top == stck.length)
+        	throw new StackIsFullException(stck.length - 1);
         stck[top] = ch;
         top++;
     }
 
     // extract symbols from stack
     
-    char pop() {
-        if(top == 0) {
-            System.out.println(" - Stack is empty."); // 
-            return (char) 0;
-        }
+    char pop() throws StackIsEmptyException{
+        if(top == 0)
+        	throw new StackIsEmptyException();
         top--;
         return stck[top];
     }
