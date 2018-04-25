@@ -1,7 +1,5 @@
 package ExceptionHandling;
 
-import Interfaces.qPack.*;
-
 // exception pointing when queue if full
 
 public class QueueFullException extends Exception{
