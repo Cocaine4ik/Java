@@ -1,5 +1,6 @@
 package Interfaces.qPack;
 
+import ExceptionHandling.QueueEmptyException;
 import ExceptionHandling.QueueFullException;
 
 // class realized fixed size queue
@@ -20,11 +21,9 @@ public class FixedQueue extends Queue implements ICharQ {
 	}
 
 	//get symbol from the queue
-	public char get() {
-		if(getloc == putloc) {
-			System.out.println("Queue is empty.");
-			return(char)0;
-		}
+	public char get()  throws QueueEmptyException {
+		if(getloc == putloc)
+			throw new QueueEmptyException();
 		getloc++;
 		return q[getloc];
 	}

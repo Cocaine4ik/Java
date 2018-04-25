@@ -1,5 +1,6 @@
 package Interfaces.qPack;
 
+import ExceptionHandling.QueueEmptyException;
 import ExceptionHandling.QueueFullException;
 
 // interface for character queue
@@ -10,7 +11,7 @@ public interface ICharQ {
 	void put(char ch) throws QueueFullException;
 	
 	// get symbol from the queue
-	char get();
+	char get() throws QueueEmptyException;
 	
 	// reset 
 	void reset();
