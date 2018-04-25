@@ -1,5 +1,6 @@
 package Interfaces;
 
+import ExceptionHandling.QueueFullException;
 import Interfaces.qPack.CircularQueue;
 import Interfaces.qPack.DynQueue;
 import Interfaces.qPack.FixedQueue;
@@ -8,7 +9,7 @@ import Interfaces.qPack.ICharQ;
 // Demonstration of the three interface ICharQ realizations
 
 public class IQDemo {
-	public static void main(String args[]) {
+	public static void main(String args[]) throws QueueFullException {
 		
 		FixedQueue q1 = new FixedQueue(10);
 		DynQueue q2 = new DynQueue(5);

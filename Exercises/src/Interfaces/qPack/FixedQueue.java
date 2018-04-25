@@ -1,5 +1,7 @@
 package Interfaces.qPack;
 
+import ExceptionHandling.QueueFullException;
+
 // class realized fixed size queue
 // for storage symbol
 
@@ -10,11 +12,9 @@ public class FixedQueue extends Queue implements ICharQ {
 	}
 
 	// put symbol to queue
-	public void put(char ch) {
-		if(putloc == q.length-1) {
-			System.out.println("Queue is full.");
-			return;
-		}
+	public void put(char ch) throws QueueFullException {
+		if(putloc == q.length-1)
+			throw new QueueFullException(q.length - 1);
 		putloc++;
 		q[putloc] = ch;
 	}
