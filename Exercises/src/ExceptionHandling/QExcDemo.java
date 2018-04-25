@@ -35,7 +35,7 @@ public class QExcDemo {
 				System.out.println(ch);
 			}
 		}
-		catch(QueueEmptyException) {
+		catch(QueueEmptyException exc) {
 			System.out.println(exc);
 		}
 	}
