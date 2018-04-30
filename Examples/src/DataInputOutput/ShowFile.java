@@ -41,12 +41,14 @@ public class ShowFile {
 		catch(IOException exc) {
 			System.out.println("Error reading file.");
 		}
-		try {
-			// closing file
-			fin.close();
-		}
-		catch(IOException exc) {
-			System.out.println("Error closing file.");
+		finally {
+			try {
+				// closing file
+				fin.close();
+			}
+			catch(IOException exc) {
+				System.out.println("Error closing file.");
+			}
 		}
 	}
 }
