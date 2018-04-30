@@ -14,7 +14,7 @@ java ShowFile TEST.TXT
 public class ShowFile {
 	public static void main(String args[]) {
 		int i;
-		FileInputStream fin;
+		FileInputStream fin = null;
 		// first of all, we must check if the file name is correct
 		if(args.length != 1) {
 			System.out.println("Usage: ShowFile File");
@@ -23,12 +23,6 @@ public class ShowFile {
 		try {
 			// opening fail
 			fin = new FileInputStream(args[0]);
-		}
-		catch(FileNotFoundException exc) {
-			System.out.println("File not found");
-			return;
-		}
-		try {
 		// read file until meet character EOF
 		do {
 			i = fin.read();
@@ -38,9 +32,12 @@ public class ShowFile {
 		}
 		while( i != -1);
 		}
-		catch(IOException exc) {
-			System.out.println("Error reading file.");
+		catch(FileNotFoundException exc) {
+			 System.out.println("File Not Found.");
 		}
+		catch(IOException exc) {
+		      System.out.println("An I/O Error Occurred");
+		}	
 		finally {
 			try {
 				// closing file
