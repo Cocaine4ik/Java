@@ -1,16 +1,27 @@
 package HouseBuilding;
 
-import java.util.Scanner;
+public class House implements Building {
+	
+int roof; // roof
+int wall; // wall
+int leftWindow; // left part of the window
+int rightWindow; // right part of the window
+int foundation; // foundation
+int leftDoor; // left door part
+int rightDoor; // right door part
+int middleDoor;
 
-public class House {
-	
-Scanner in = new Scanner(System.in); 
-	
-// making spaces between the text	
-	void printSpace() {
-	System.out.println();
-	System.out.println();
+House(int r, int w, int lw, int rw, int f, int ld, int rd, int md ) {
+	roof = r;
+	wall = w;
+	leftWindow = lw;
+	rightWindow = rw;
+	foundation = f;
+	leftDoor = ld;
+	rightDoor = rd;
+	middleDoor = md;
 }
+
 
 //printing line with 16 symbols, using for printing roof and ground
 void printLine(int roofOrFoundation) { 
