@@ -2,5 +2,11 @@ package HouseBuilding;
 
 public interface Building {
 	
-	void print(int stuff, int count);
+	void print(char type, int num);
+	
+	char getType();
+	void setType(char type);
+	
+	int getNum();
+	void setNum(int num);
 }

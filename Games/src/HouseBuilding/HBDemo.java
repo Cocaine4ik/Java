@@ -23,86 +23,27 @@ public class HBDemo {
 		// dash - 45, straight slash - 124, equal - 61
 		// left square bracket - 91, right square bracket - 93
 		// left brace - 123, right brace - 125
-					
-		House home = new House(45, 124, 61, 91, 93, 123, 125, 61);
+			
+		House home = new House(6, 12);
 		
-		// The first part of program.
-		// Building default house!
+		Stuff roof = new Stuff('-', 16);
+		Stuff wall = new Stuff('|', 5);
+		Stuff lw = new Stuff('[', 7);
+		Stuff rw = new Stuff(']', 5);
+		Stuff f = new Stuff('2',5);
+		Stuff ld = new Stuff('2',5);
+		Stuff rd = new Stuff('2',5);
+		Stuff md = new Stuff('2',5);
 		
-		System.out.print("Building house...");
-		System.out.println("\n");
-		
-		// printing roof	
-		home.print(home.getRoof(), 16);
-		
-		// printing main part of the house: 2-7 floors
-		for(int i = 0; i < 7; i++) {
-			home.print(home.getWall(), 1);
+		roof.print(roof);
+		for(int i = 0; i < wall.getNum(); i++) {
+			wall.print();
+			for(int j = 0; j < lw.getNum(); j++) {
+				lw.print();
+				rw.print();
+			}
+			System.out.println();
 		}
-		
-		// printing 1 floor
-		// printing left wall
-		home.printWall(wall);
-		
-		// printing doors
-		home.printDoors(ld, md, rd); 
-		
-		// printing right wall
-		home.printWall(wall); 
-		System.out.println();
-		
-		// printing foundation
-		home.printLine(foundation); 
-		home.printSpace();
-		
-		// ************************************************ 
-		// The second part of program. Building user house!
-		// ************************************************
-		
-		//greeting new user		
-		home.greeting();
-		
-		// return and assign chosen by user parameters about roof style to variable roof
-		roof = home.chooseRoof(roof);
-		
-		// return and assign chosen by user parameters about wall style to variable wall
-		wall = home.chooseWall(wall);
-		
-		// return and assign chosen by user parameters about left window style to variable lw
-		lw = home.chooseWindows(lw);
-		
-			// return and assign selecting a couple for the left window
-			rw = home.windows(lw);
-		
-		// return and assign chosen by user parameters about left door style to variable ld
-		ld = home.chooseDoors(ld);
-		
-		// return and assign selecting a couple for the right door
-		rd = home.doors(ld);
-		
-		// return and assign chosen by user parameters about foundation style to variable foundation
-		foundation = home.chooseFoundation(foundation);
-		// printing roof	
-				home.printLine(roof);
-				
-				// printing main part of the house: 2-7 floors
-				home.printMain(wall, lw, rw); 
-				
-				// printing 1 floor
-				// printing left wall
-				home.printWall(wall);
-				
-				// printing doors
-				home.printDoors(ld, md, rd); 
-				
-				// printing right wall
-				home.printWall(wall); 
-				System.out.println();
-				
-				// printing foundation
-				home.printLine(foundation); 
-				home.printSpace();
-				
-				System.out.println("Exellent job! Your house looking great!");
+
 	}
 }
