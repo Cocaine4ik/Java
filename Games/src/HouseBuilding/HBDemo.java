@@ -26,15 +26,19 @@ public class HBDemo {
 					
 		House home = new House(45, 124, 61, 91, 93, 123, 125, 61);
 		
-		// The first part of program. Building default house!
+		// The first part of program.
+		// Building default house!
+		
 		System.out.print("Building house...");
 		System.out.println("\n");
 		
 		// printing roof	
-		home.printLine(roof);
+		home.print(home.getRoof(), 16);
 		
 		// printing main part of the house: 2-7 floors
-		home.printMain(wall, lw, rw); 
+		for(int i = 0; i < 7; i++) {
+			home.print(home.getWall(), 1);
+		}
 		
 		// printing 1 floor
 		// printing left wall

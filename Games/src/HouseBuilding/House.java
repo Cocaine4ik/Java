@@ -2,34 +2,61 @@ package HouseBuilding;
 
 public class House implements Building {
 	
-int roof; // roof
-int wall; // wall
-int leftWindow; // left part of the window
-int rightWindow; // right part of the window
-int foundation; // foundation
-int leftDoor; // left door part
-int rightDoor; // right door part
-int middleDoor;
+	int roof; // roof
+	int wall; // wall
+	int leftWindow; // left part of the window
+	int rightWindow; // right part of the window
+	int foundation; // foundation
+	int leftDoor; // left door part
+	int rightDoor; // right door part
+	int middleDoor; // middle door
 
-House(int r, int w, int lw, int rw, int f, int ld, int rd, int md ) {
-	roof = r;
-	wall = w;
-	leftWindow = lw;
-	rightWindow = rw;
-	foundation = f;
-	leftDoor = ld;
-	rightDoor = rd;
-	middleDoor = md;
-}
-
-
-//printing line with 16 symbols, using for printing roof and ground
-void printLine(int roofOrFoundation) { 
-	for(int i = 0; i < 16; i++) {
-		System.out.print((char)roofOrFoundation);
+	House(int r, int w, int lw, int rw, int f, int ld, int rd, int md ) {
+		roof = r;
+		wall = w;
+		leftWindow = lw;
+		rightWindow = rw;
+		foundation = f;
+		leftDoor = ld;
+		rightDoor = rd;
+		middleDoor = md;
 	}
-	System.out.println();
-}
+	
+	public void print(int stuff, int count) {
+		for(int i = 0; i <= count; i++) {
+			System.out.print((char)stuff);
+		}
+		System.out.println();
+	}
+	public void printMain(int ) {
+		print()
+	}
+	int getRoof() { return roof; }
+	void setRoof(int r) { roof = r; }
+	
+	int getWall() { return wall; }
+	void setWall(int w) {wall = w; }
+	
+	int getLeftWindow() { return leftWindow; }
+	void setLeftWindow(int lw) { leftWindow = lw; }
+	
+	int getRightWindow() { return rightWindow; }
+	void setRightWindow(int rw) {rightWindow = rw; }
+	
+	int getFoundation() { return foundation; }
+	void setFoundation(int f) { foundation = f; }
+	
+	int getLeftDoor() { return leftDoor; }
+	void setLeftDoor(int ld) {leftDoor = ld; }
+	
+	int getRightDoor() { return rightDoor; }
+	void setRightDoor(int rd) { rightDoor = rd; }
+	
+	int getMiddleDoor() { return middleDoor; }
+	void setMiddleDoor(int md) { middleDoor = md; }
+	
+	
+	
 
 // print one wall
 void printWall(int wall) {
