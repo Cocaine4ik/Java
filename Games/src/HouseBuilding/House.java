@@ -31,6 +31,8 @@ public class House implements Building{
 		this.md = md;
 
 	}
+	
+	House() {}
 
 	public void build(char style) {
 		System.out.print(style);
@@ -40,7 +42,6 @@ public class House implements Building{
 		for(int i = 0; i < num; i++) {
 			System.out.print(style);
 		}
-		System.out.println();
 	}
 		
 	int getFloor() { return floor; }

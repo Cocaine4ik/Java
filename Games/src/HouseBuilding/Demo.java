@@ -24,9 +24,14 @@ public class Demo {
 		// left square bracket - 91, right square bracket - 93
 		// left brace - 123, right brace - 125
 			
-		House home = new House(8, 16, '-', '|', '[', ']', '{', '}', '=', '-');
+		House home = new House (8, 18, '-', '|', '[', ']', '-', '{', '}', '=');
+		House home2 = new House();
+		
+		System.out.println("Buidling default house...\n");
 		
 		home.build(home.getRoof(), home.getFlat());
+		System.out.println();
+		
 		for(int i = 0; i < home.getFloor(); i++) {
 			home.build(home.getWall());
 			for(int j = 0; j < home.getFlat()/2-1; j++) {
@@ -36,7 +41,17 @@ public class Demo {
 			home.build(home.getWall());
 			System.out.println();		
 		}
-
+		
+		home.build(home.getWall());
+		home.build(home.SPACE, home.getFlat()/3);
+		home.build(home.getLd());
+		home.build(home.getMd(),2);
+		home.build(home.getRd());
+		home.build(home.SPACE, home.getFlat()/3);
+		home.build(home.getWall());
+		System.out.println();
+		
+		home.build(home.getF(), home.getFlat());
 		
 	}
 }
