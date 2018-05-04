@@ -2,6 +2,6 @@ package HouseBuilding;
 
 public interface Building {
 	
-	void build(int num);
+	void build(char style);
 	
 }

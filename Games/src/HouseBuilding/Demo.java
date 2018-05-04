@@ -16,7 +16,7 @@ package HouseBuilding;
 
 import java.util.Scanner;
 
-public class HBDemo {
+public class Demo {
 	public static void main(String args[]) {
 		
 		// Symbol codes for building DEFAULT home	
@@ -24,25 +24,16 @@ public class HBDemo {
 		// left square bracket - 91, right square bracket - 93
 		// left brace - 123, right brace - 125
 			
-		House home = new House(10, 16);
+		House home = new House(8, 16, '-', '|', '[', ']', '{', '}', '=', '-');
 		
-		Stuff roof = new Stuff('-');
-		Stuff wall = new Stuff('|');
-		Stuff lw = new Stuff('[');
-		Stuff rw = new Stuff(']');
-		Stuff f = new Stuff('2');
-		Stuff ld = new Stuff('2');
-		Stuff rd = new Stuff('2');
-		Stuff md = new Stuff('2');
-		
-		roof.build(home.flat);
+		home.build(home.getRoof(), home.getFlat());
 		for(int i = 0; i < home.getFloor(); i++) {
-			wall.build();
+			home.build(home.getWall());
 			for(int j = 0; j < home.getFlat()/2-1; j++) {
-				lw.build();
-				rw.build();
+				home.build(home.getLw());
+				home.build(home.getRw());
 			}
-			wall.build();
+			home.build(home.getWall());
 			System.out.println();		
 		}
 

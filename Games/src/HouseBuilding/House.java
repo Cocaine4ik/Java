@@ -31,13 +31,18 @@ public class House implements Building{
 		this.md = md;
 
 	}
-	
-	@Override
-	public void build(int num) {
-		// TODO Auto-generated method stub
-		
+
+	public void build(char style) {
+		System.out.print(style);
 	}	
-	
+		
+	public void build(char style, int num) {
+		for(int i = 0; i < num; i++) {
+			System.out.print(style);
+		}
+		System.out.println();
+	}
+		
 	int getFloor() { return floor; }
 	void setFloor(int floor) { this.floor = floor; }
 	
