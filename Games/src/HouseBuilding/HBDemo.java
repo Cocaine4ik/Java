@@ -1,8 +1,8 @@
 package HouseBuilding;
 
-// Code a program which will print a picture, using symbols from the table ASCII.
+// Code a program which will build a picture, using symbols from the table ASCII.
 // Transform integer to character using java transforming types ability.
-// Using System.out.print - u can make something like that
+// Using System.out.build - u can make something like that
 // ----------------
 // |[][][][][][][]|
 // |[][][][][][][]|
@@ -12,7 +12,7 @@ package HouseBuilding;
 // |     {==}	  |
 // ----------------
 // To make task more difficult, after first picture, we asking user to try
-// print a picture using symbols which he would like to.
+// build a picture using symbols which he would like to.
 
 import java.util.Scanner;
 
@@ -24,26 +24,28 @@ public class HBDemo {
 		// left square bracket - 91, right square bracket - 93
 		// left brace - 123, right brace - 125
 			
-		House home = new House(6, 12);
+		House home = new House(10, 16);
 		
-		Stuff roof = new Stuff('-', 16);
-		Stuff wall = new Stuff('|', 5);
-		Stuff lw = new Stuff('[', 7);
-		Stuff rw = new Stuff(']', 5);
-		Stuff f = new Stuff('2',5);
-		Stuff ld = new Stuff('2',5);
-		Stuff rd = new Stuff('2',5);
-		Stuff md = new Stuff('2',5);
+		Stuff roof = new Stuff('-');
+		Stuff wall = new Stuff('|');
+		Stuff lw = new Stuff('[');
+		Stuff rw = new Stuff(']');
+		Stuff f = new Stuff('2');
+		Stuff ld = new Stuff('2');
+		Stuff rd = new Stuff('2');
+		Stuff md = new Stuff('2');
 		
-		roof.print(roof);
-		for(int i = 0; i < wall.getNum(); i++) {
-			wall.print();
-			for(int j = 0; j < lw.getNum(); j++) {
-				lw.print();
-				rw.print();
+		roof.build(home.flat);
+		for(int i = 0; i < home.getFloor(); i++) {
+			wall.build();
+			for(int j = 0; j < home.getFlat()/2-1; j++) {
+				lw.build();
+				rw.build();
 			}
-			System.out.println();
+			wall.build();
+			System.out.println();		
 		}
 
+		
 	}
 }
