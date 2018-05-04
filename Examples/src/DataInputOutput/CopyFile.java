@@ -60,6 +60,36 @@ public class CopyFile {
 		try { fout.close(); }
 		catch (IOException exc) {
 			System.out.println("Error closing output file.");
+			try { fin.close(); }
+			catch (IOException exc2) {
+				System.out.println("Error closing input file.");
+			}
+			return;
+				
+			}
+		// copy file
+		try {
+			do {
+				// reading bytes from one file and writing to another file
+				i = fin.read();
+				if(i != -1) fout.write (i);
+			}
+			while(i != -1);
+			}
+		catch (IOException exc) {
+			System.out.println("File Error");
 		}
+		try {
+			fin.close();
+		}
+			catch (IOException exc) {
+				System.out.println("Error closing input file.");
+			}
+			try {
+				fout.close();
+		}
+			catch (IOException exc) {
+				System.out.println("Error closing output file.");
+			}
 	}
 }
