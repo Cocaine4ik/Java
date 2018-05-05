@@ -52,6 +52,9 @@ public class Demo {
 		System.out.println();
 		
 		home.build(home.getF(), home.getFlat());
+		System.out.println("\n");
 		
+		System.out.println("Now you can build your own house!");
+		System.out.println("Let's choose structures to your house.\n");
 	}
 }
