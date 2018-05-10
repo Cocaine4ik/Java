@@ -52,6 +52,7 @@ public class RWData {
 		}
 		catch (IOException exc) {
 			System.out.println("Read error.");
+			return;
 		}
 	}
 }
