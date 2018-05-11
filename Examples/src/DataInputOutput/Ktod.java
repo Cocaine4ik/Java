@@ -18,7 +18,7 @@ public class Ktod {
 		try (FileWriter fw = new FileWriter("test.txt")) {
 			do {System.out.print(": ");
 			str = br.readLine();
-			if(str.compareTo("stop") == 0) break;
+			if(str.compareTo("q") == 0) break;
 				str = str + "\r\n"; // add new line
 			// writing text lines in to file
 				fw.write(str);
