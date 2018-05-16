@@ -20,7 +20,7 @@ public class Hyphen {
 		int i;
 		
 		// open source file
-		System.out.println("Enter source file name:");
+		System.out.println("\nEnter source file name:");
 		try {
 			fin  = new FileInputStream(in.nextLine());
 		}
@@ -30,7 +30,7 @@ public class Hyphen {
 		}
 		
 		// open target file
-		System.out.println("Enter target file name:");
+		System.out.println("\nEnter target file name:");
 		try {
 			fout = new FileOutputStream(in.nextLine());
 		}
@@ -43,7 +43,7 @@ public class Hyphen {
 		return;
 		}
 		// copy file
-		System.out.println("Copying...");
+		System.out.println("\nCopying...");
 		try {
 			do {
 				i = fin.read();
@@ -63,6 +63,6 @@ public class Hyphen {
 		catch(IOException exc) {
 			System.out.println("Error closing  target file");
 		}
-		System.out.println("Done!");
+		System.out.println("\n...Done!");
 	}
 }
