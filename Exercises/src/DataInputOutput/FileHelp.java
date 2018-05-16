@@ -13,7 +13,7 @@ public class FileHelp {
 		do {
 			topic = hlpobj.getSelection();
 			if(!hlpobj.helpon(topic)) 
-				System.out.println("Topic no found.");
+				System.out.println("Topic not found.");
 		}
 		while(topic.compareTo("stop") != 0);
 	}

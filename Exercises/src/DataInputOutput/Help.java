@@ -41,6 +41,7 @@ public class Help {
 						// theme is not find
 						do {
 							info = helpRdr.readLine();
+							if(info != null) System.out.println(info);
 						}
 						while ((info != null) && (info.compareTo("") != 0));
 						return true;
