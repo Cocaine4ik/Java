@@ -43,6 +43,7 @@ public class Hyphen {
 		return;
 		}
 		// copy file
+		System.out.println("Copying...");
 		try {
 			do {
 				i = fin.read();
@@ -60,7 +61,8 @@ public class Hyphen {
 		}
 		try {fout.close(); }
 		catch(IOException exc) {
-			System.out.println("Error clsoing target file");
+			System.out.println("Error closing  target file");
 		}
+		System.out.println("Done!");
 	}
 }
