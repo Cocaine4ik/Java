@@ -24,6 +24,7 @@ public class Priority implements Runnable {
 		
 		do {
 			count++;
+			
 			if(currentName.compareTo(thrd.getName()) != 0) {
 				currentName = thrd.getName();
 				System.out.println("In " + currentName);
@@ -31,7 +32,7 @@ public class Priority implements Runnable {
 			// first thread which will achieve value 10000000
 			// will end else threads
 		}
-		while (stop == false && count == 10000000);
+		while (stop == false && count < 10000000);
 		stop = true;
 		
         System.out.println("\n" + thrd.getName() +
