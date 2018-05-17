@@ -25,4 +25,6 @@ public class MyThread2 extends Thread{
 		}
 		System.out.println(getName() + " terminating.");
 	}
+	
+	
 }

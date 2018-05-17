@@ -18,7 +18,7 @@ public class SumArray {
             catch(InterruptedException exc) {
                 System.out.println("Main thread interrupted.");
 		}
-
+			
 		}			
 		return sum;
 	}
