@@ -7,15 +7,18 @@ public class UseThreads {
 		
 		System.out.println("Main thread starting.");
 		
-		  // First, build object type MyThread
+		  // Now, thread starting after creation
 		MyThread mt = new MyThread("Child #1"); // creating executable object
 		
-		// form thread from this object
-		Thread newThrd = new Thread(mt); // form thread from this object
-		
-		// and at list, start thread executing
-		
-		
-		
+		for(int i = 0; i < 50; i++) {
+			System.out.print(".");
+			try {
+				Thread.sleep(100);
+			}
+			catch (InterruptedException exc) {
+				System.out.println("Main thread interrupted.");
+			}
+		}
+		System.out.println("Main thread ending.");
 	}
 }
