@@ -5,7 +5,7 @@ public class ExtendThread {
 	        System.out.println("Main thread starting.");
 
 	        // Теперь поток начинается при его создании.
-	        MyThread mt = new MyThread("Child #1");
+	        MyThread2 mt = new MyThread2("Child #1");
 
 	        for (int i=0; i < 50; i++) {
 	            System.out.print(".") ;
