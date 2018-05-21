@@ -15,6 +15,13 @@ public class TickTock {
 		
 		System.out.print("Tick ");
 		
+		try {
+			Thread.sleep(500);
+		}
+		catch (InterruptedException exc) {
+			System.out.println("Thread interrupted.");
+		}
+		
 		state = "ticked"; // select current status after "tick"
 		notify(); // method tick notify method tock()
 		// about executing opportunity
@@ -36,6 +43,12 @@ public class TickTock {
 		}
 		
 		System.out.println("Tock ");
+		try {
+			Thread.sleep(500);
+		}
+		catch (InterruptedException exc) {
+			System.out.println("Thread interrupted.");
+		}
 		
 		state = "tocked"; // select current status after "tock"
 		notify(); // method tock notify method tick() 
