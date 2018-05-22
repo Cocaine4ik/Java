@@ -2,9 +2,7 @@ package EnumAutopackAnnotationsStaticimport;
 
 // Features of usage enumeration Transport
 // Announce enumeration
-enum Transport {
-	CAR, TRUCK, AIRPLANE, TRAIN, BOAT
-}
+
 public class EnumDemo {
 	public static void main(String args[]) {
 		
