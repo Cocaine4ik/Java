@@ -13,6 +13,6 @@ public class EnumDemo3 {
 		// show all transport types and their movement speed
 		System.out.println("All transport speeds: ");
 		for(Transport t : Transport.values())
-			System.out.println(t + " typical speed is " + t.getSpeed() + "miles per hour.");
+			System.out.println(t + " typical speed is " + t.getSpeed() + " miles per hour.");
 	}
 }
