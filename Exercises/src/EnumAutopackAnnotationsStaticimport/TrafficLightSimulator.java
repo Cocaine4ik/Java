@@ -68,5 +68,12 @@ public class TrafficLightSimulator implements Runnable {
 			System.out.println(exc);
 		}
 	}
-	
+	// return current color
+	TrafficLightColor getColor() {
+		return tic;
+	}
+	// stop traffic light imitation
+	void cancel() {
+		stop = true;
+	}
 }
