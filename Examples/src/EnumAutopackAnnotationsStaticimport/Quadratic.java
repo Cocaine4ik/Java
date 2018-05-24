@@ -2,10 +2,13 @@ package EnumAutopackAnnotationsStaticimport;
 
 // Solution of quadratic equation 
 
+import static java.lang.Math.sqrt;
+import static java.lang.Math.pow;
+
 public class Quadratic {
 	public static void main(String args[]) {
 		
-		// variables a, b and c are designating index
+		// variables a, b and c are designating indexes
 		// of the quadratic equation ax2 + bx + c = 0
 		
 		double a, b, c, x;
@@ -17,11 +20,11 @@ public class Quadratic {
 		c = -3;
 		
 		// Find first solution
-		x = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+		x = (-b + sqrt(pow(b, 2) - 4 * a * c)) / (2 * a);
 		System.out.println("First solution: " + x);
 		
 		// Find second solution
-		x = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+		x = (-b - sqrt(pow(b, 2) - 4 * a * c)) / (2 * a);
 		System.out.println("Second solution: " + x);
 		
 	}
