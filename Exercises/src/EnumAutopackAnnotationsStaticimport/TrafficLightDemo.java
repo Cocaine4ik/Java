@@ -3,7 +3,16 @@ package EnumAutopackAnnotationsStaticimport;
 // Traffic Light demonstration
 
 enum TrafficLightColor {
-	RED, GREEN, YELLOW
+	RED(12000), GREEN(10000), YELLOW(2000);
+	
+	private int delay;
+
+	TrafficLightColor (int d) {
+		d = delay;
+	}
+	
+	int getDelay() { return delay; }
+
 }
 
 public class TrafficLightDemo {

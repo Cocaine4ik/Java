@@ -5,18 +5,18 @@ package EnumAutopackAnnotationsStaticimport;
 public class TrafficLightSimulator implements Runnable {
 
 	private Thread thrd; // thread for traffic light imitation
-	private TrafficLightColor tic; // Current traffic light color
+	private TrafficLightColor tlc; // Current traffic light color
 	boolean stop = false; // stop imitation, if it is true
 	boolean changed = false; // change traffic light, if it is true
 	
 	TrafficLightSimulator(TrafficLightColor init) {
-		tic = init;
+		tlc = init;
 		thrd = new Thread(this);
 		thrd.start();
 	}
 	
 	TrafficLightSimulator() {
-		tic = TrafficLightColor.RED;
+		tlc = TrafficLightColor.RED;
 		thrd = new Thread(this);
 		thrd.start();
 	}
@@ -24,17 +24,7 @@ public class TrafficLightSimulator implements Runnable {
 	public void run() {
 		while(!stop) {
 			try {
-				switch(tic) {
-				case GREEN: 
-					Thread.sleep(10000); // green during 10 seconds
-					break;
-				case YELLOW:
-					Thread.sleep(2000); // yellow during 2 seconds
-					break;
-				case RED:
-					Thread.sleep(12000); // red during 12 seconds
-					break;
-				}
+				Thread.sleep(tlc.getDelay());
 			}
 			catch (InterruptedException exc) {
 				System.out.println(exc);
@@ -44,15 +34,15 @@ public class TrafficLightSimulator implements Runnable {
 	}
 	// change light traffic color
 	synchronized void changeColor() {
-		switch(tic) {
+		switch(tlc) {
 		case RED:
-			tic = TrafficLightColor.GREEN;
+			tlc = TrafficLightColor.GREEN;
 			break;
 		case YELLOW:
-			tic = TrafficLightColor.RED;
+			tlc = TrafficLightColor.RED;
 			break;
 		case GREEN:
-			tic = TrafficLightColor.YELLOW;
+			tlc = TrafficLightColor.YELLOW;
 		}
 		changed = true;
 		notify(); // notify about traffic light changing
@@ -70,7 +60,7 @@ public class TrafficLightSimulator implements Runnable {
 	}
 	// return current color
 	TrafficLightColor getColor() {
-		return tic;
+		return tlc;
 	}
 	// stop traffic light imitation
 	void cancel() {
