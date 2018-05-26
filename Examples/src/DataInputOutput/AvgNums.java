@@ -32,7 +32,7 @@ public class AvgNums {
 	System.out.println("Enter " + n + " values.");
 	
 	for(int i = 0; i < n; i++) {
-		System.out.println(" : ");
+		System.out.print(" : ");
 		str = br.readLine();
 		
 		try {
