@@ -5,7 +5,7 @@ package Generic;
 // operations, includes receiving inverse value or
 // getting fractional part of numerical value of any type.
 
-public class NumericFns <T> {
+public class NumericFns <T extends Number> {
 	
 	T num;
 
@@ -15,5 +15,12 @@ public class NumericFns <T> {
 	}
 	
 	// return inverse value
-
+	double reciprocal() {
+		return num.doubleValue() - num.intValue();
+	}
+	
+	// return fractional
+	double fraction() {
+		return num.doubleValue() - num.intValue();
+	}
 }
