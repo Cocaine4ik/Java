@@ -16,7 +16,7 @@ public class NumericFns <T extends Number> {
 	
 	// return inverse value
 	double reciprocal() {
-		return num.doubleValue() - num.intValue();
+		return 1 / num.doubleValue();
 	}
 	
 	// return fractional
