@@ -1,6 +1,6 @@
 package Generic;
 
-// show meta character argument usage
+// show wild card argument usage
 
 public class WildcardDemo {
 	public static void main(String args[]) {
@@ -10,7 +10,7 @@ public class WildcardDemo {
 		NumericFns<Long> lOb = new NumericFns<Long>(5L);
 		
 		System.out.println("Testing iOb and dOb.");
-		// In this method calling meta character is
+		// In this method calling wild card is
 		// equal with type Double.
 		if(iOb.absEqual(dOb))
 			System.out.println("Absolute value are equal.");
@@ -20,7 +20,7 @@ public class WildcardDemo {
 		System.out.println();
 		
 		System.out.println("Testing iOb and 10b");
-		// In this method calling meta character type 
+		// In this method calling wild card type 
 		// argument equal with type Long
 		if(iOb.absEqual(lOb))
 			System.out.println("Absolute value are equal.");
