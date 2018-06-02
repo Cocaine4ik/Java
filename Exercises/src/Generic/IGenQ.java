@@ -6,7 +6,7 @@ package Generic;
 public interface IGenQ<T> {
 
 	// put element to queue
-	void put(T ch) throws QueueFullExceptions;
+	void put(T ch) throws QueueFullException;
 	
 	// get element from queue
 	T get () throws QueueEmptyException;
