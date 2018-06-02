@@ -11,4 +11,3 @@ public interface IGenQ<T> {
 	// get element from queue
 	T get () throws QueueEmptyException;
 }
-W
