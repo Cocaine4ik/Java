@@ -10,7 +10,7 @@ import java.applet.*;
  </applet>
  */
 
-public class AppletSkel {
+public class AppletSkel extends Applet {
 
 	// this method is calling firstly
 	public void init() {
