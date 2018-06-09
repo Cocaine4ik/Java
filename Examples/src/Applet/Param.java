@@ -44,7 +44,7 @@ public class Param extends Applet {
 	}
 	public void paint(Graphics g) {
 		g.drawString("Purpose: " + purpose, 10, 20);
-		g.drawString("By: ", 10, 40);
+		g.drawString("By: " + author, 10, 40);
 		g.drawString("Version " + ver, 10, 60);
 	}
 }
