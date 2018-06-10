@@ -81,7 +81,7 @@ public class MouseEvents extends Applet implements MouseListener, MouseMotionLis
 	// handle an event, started when mouse cursor is moved
 	public void mouseMoved(MouseEvent me) {
 		// show current cursor destination in status string
-		showStatus("Moving mouse at " + me.getX() + "t " + me.getY());
+		showStatus("Moving mouse at " + me.getX() + ", " + me.getY());
 	}
 	
 	// show message from variable msg in applet window
