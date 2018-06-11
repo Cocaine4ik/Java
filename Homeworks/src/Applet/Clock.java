@@ -4,6 +4,11 @@ import java.util.*;
 import java.awt.*;
 import java.applet.*;
 
+/*
+ * <applet code = "Clock" width = 300 height = 200>
+ * </applet>
+ */
+
 // This applet must show current time, refresh
 // content of the current window every second.
 // Use object from the class Calendar and his methods.
