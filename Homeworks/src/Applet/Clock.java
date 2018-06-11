@@ -48,7 +48,9 @@ public class Clock extends Applet implements Runnable {
 	
 	public void paint(Graphics g) {
 		clock = Calendar.getInstance();
-		msg = "Current time: " + clock.HOUR + " " + clock.MINUTE + " " + clock.SECOND;
+		msg = "Current time: " + Integer.toString(clock.get(Calendar.HOUR)) + " : " + 
+				Integer.toString(clock.get(Calendar.MINUTE)) + " : " + 
+				Integer.toString(clock.get(Calendar.SECOND));
 		g.drawString(msg, 50, 30);
 	}
 	
