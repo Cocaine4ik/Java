@@ -6,6 +6,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * @author Alex
+ *
+ */
 public class ButtonDemo implements ActionListener {
 	JLabel jlab;
 	
