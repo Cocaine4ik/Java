@@ -1,6 +1,6 @@
 package Swing;
 
-// Demonstration of the button pressing and handling of evenets actions
+// Demonstration of the button pressing and handling of events actions
 
 import java.awt.*;
 import java.awt.event.*;
