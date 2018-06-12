@@ -57,7 +57,7 @@ public class TFDemo implements ActionListener {
 			jtf.setText(resStr);
 		}
 		else
-			jlabContents.setText("You pressed Enter. Test is: " + jtf.getText());	
+			jlabContents.setText("You pressed Enter. Text is: " + jtf.getText());	
 	}
 	
 	public static void main(String args[]) {
