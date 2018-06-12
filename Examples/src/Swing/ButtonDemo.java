@@ -54,7 +54,7 @@ public class ButtonDemo implements ActionListener {
 			jlab.setText("Ypu pressed Down");
 	}
 	
-	public void main(String args[]) {
+	public static void main(String args[]) {
 		// create window border in thread of dispatching events
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
