@@ -51,7 +51,7 @@ public class ButtonDemo implements ActionListener {
 		if(ae.getActionCommand().equals("Up"))
 			jlab.setText("You pressed Up.");
 		else 
-			jlab.setText("Ypu pressed Down");
+			jlab.setText("You pressed Down");
 	}
 	
 	public static void main(String args[]) {
