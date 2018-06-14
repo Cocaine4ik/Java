@@ -1,4 +1,4 @@
-package Swift;
+package Swing;
 
  // Utility which compare files, created on Swing.
 
