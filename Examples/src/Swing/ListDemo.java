@@ -13,9 +13,9 @@ public class ListDemo implements ListSelectionListener{
 	JScrollPane jscrlp;
 	
 	// create array with name
-	String names[] = { "Sherry", "Jon", "Rachel", // Этот массив имен
-           "Sasha", "Josselyn", "Randy", // будет отображаться
-           "Tom", "Mary", "Ken", // списком в компоненте JList.
+	String names[] = { "Sherry", "Jon", "Rachel", 
+           "Sasha", "Josselyn", "Randy", 
+           "Tom", "Mary", "Ken",
            "Andrew", "Matt", "Todd" };
 	
 	ListDemo() {
