@@ -86,13 +86,13 @@ public class FileCompAndLoc implements ActionListener{
 			}
 			while (i != -1 && j != -1);
 			
-			defA.substring(defA.length()-10);
-			defB.substring(defB.length()-10);
+			defA = defA.substring(defA.length() - 20);
+			defB = defB.substring(defB.length() - 20);
 			
 			if(i != j) {
 				if(locateCB.isSelected()) {
 					
-					result.setText("Files differ in: ");
+					result.setText("Files differ in:");
 					defineA.setText(defA);
 					and.setText("and");
 					defineB.setText(defB);
